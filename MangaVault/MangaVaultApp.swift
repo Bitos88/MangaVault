@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MangaVaultApp: App {
+    @StateObject var loginViewModel = LoginViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginMainView()
+                .environmentObject(loginViewModel)
         }
     }
 }

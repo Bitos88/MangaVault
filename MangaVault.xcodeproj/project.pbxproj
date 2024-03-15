@@ -11,6 +11,18 @@
 		1A6347622BA4D11400234EFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6347612BA4D11400234EFC /* ContentView.swift */; };
 		1A6347642BA4D11700234EFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6347632BA4D11700234EFC /* Assets.xcassets */; };
 		1A6347672BA4D11700234EFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6347662BA4D11700234EFC /* Preview Assets.xcassets */; };
+		1A6347722BA4D62B00234EFC /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6347712BA4D62B00234EFC /* URL.swift */; };
+		1A6347742BA4D64900234EFC /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6347732BA4D64900234EFC /* URLRequest.swift */; };
+		1A6347762BA4D68500234EFC /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6347752BA4D68500234EFC /* URLSession.swift */; };
+		1A6347782BA4D6A200234EFC /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6347772BA4D6A200234EFC /* NetworkError.swift */; };
+		1A63477A2BA4D6C400234EFC /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6347792BA4D6C400234EFC /* JSONDecoder.swift */; };
+		1A63477D2BA4D6F200234EFC /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A63477C2BA4D6F200234EFC /* DateFormatter.swift */; };
+		1A6347802BA4D7A800234EFC /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A63477F2BA4D7A800234EFC /* LoginInteractor.swift */; };
+		1A6347852BA4D99A00234EFC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6347842BA4D99A00234EFC /* LoginViewModel.swift */; };
+		1A6347872BA4DA8E00234EFC /* LoginMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6347862BA4DA8E00234EFC /* LoginMainView.swift */; };
+		1A6347892BA4DB3300234EFC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6347882BA4DB3300234EFC /* LoginView.swift */; };
+		1A63478B2BA4DB3B00234EFC /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A63478A2BA4DB3B00234EFC /* RegisterView.swift */; };
+		1A63478D2BA4DDFD00234EFC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A63478C2BA4DDFD00234EFC /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +31,18 @@
 		1A6347612BA4D11400234EFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1A6347632BA4D11700234EFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A6347662BA4D11700234EFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1A6347712BA4D62B00234EFC /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		1A6347732BA4D64900234EFC /* URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		1A6347752BA4D68500234EFC /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		1A6347772BA4D6A200234EFC /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		1A6347792BA4D6C400234EFC /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
+		1A63477C2BA4D6F200234EFC /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		1A63477F2BA4D7A800234EFC /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		1A6347842BA4D99A00234EFC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		1A6347862BA4DA8E00234EFC /* LoginMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainView.swift; sourceTree = "<group>"; };
+		1A6347882BA4DB3300234EFC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1A63478A2BA4DB3B00234EFC /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		1A63478C2BA4DDFD00234EFC /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +75,16 @@
 		1A63475E2BA4D11400234EFC /* MangaVault */ = {
 			isa = PBXGroup;
 			children = (
-				1A63475F2BA4D11400234EFC /* MangaVaultApp.swift */,
+				1A63477E2BA4D79500234EFC /* Interactor */,
+				1A63477B2BA4D6E800234EFC /* Extension */,
+				1A6347702BA4D61500234EFC /* Network */,
+				1A63476D2BA4D4B600234EFC /* Core */,
+				1A63476F2BA4D4D600234EFC /* Resources */,
+				1A63476E2BA4D4C400234EFC /* System */,
 				1A6347612BA4D11400234EFC /* ContentView.swift */,
 				1A6347632BA4D11700234EFC /* Assets.xcassets */,
 				1A6347652BA4D11700234EFC /* Preview Content */,
+				1A63478C2BA4DDFD00234EFC /* CustomTextField.swift */,
 			);
 			path = MangaVault;
 			sourceTree = "<group>";
@@ -65,6 +95,84 @@
 				1A6347662BA4D11700234EFC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1A63476D2BA4D4B600234EFC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1A6347812BA4D8AA00234EFC /* Login */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		1A63476E2BA4D4C400234EFC /* System */ = {
+			isa = PBXGroup;
+			children = (
+				1A63475F2BA4D11400234EFC /* MangaVaultApp.swift */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		1A63476F2BA4D4D600234EFC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1A6347702BA4D61500234EFC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1A6347712BA4D62B00234EFC /* URL.swift */,
+				1A6347732BA4D64900234EFC /* URLRequest.swift */,
+				1A6347752BA4D68500234EFC /* URLSession.swift */,
+				1A6347772BA4D6A200234EFC /* NetworkError.swift */,
+				1A6347792BA4D6C400234EFC /* JSONDecoder.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		1A63477B2BA4D6E800234EFC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1A63477C2BA4D6F200234EFC /* DateFormatter.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		1A63477E2BA4D79500234EFC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1A63477F2BA4D7A800234EFC /* LoginInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		1A6347812BA4D8AA00234EFC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1A6347822BA4D8B200234EFC /* View */,
+				1A6347832BA4D8B900234EFC /* ViewModel */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		1A6347822BA4D8B200234EFC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A6347862BA4DA8E00234EFC /* LoginMainView.swift */,
+				1A6347882BA4DB3300234EFC /* LoginView.swift */,
+				1A63478A2BA4DB3B00234EFC /* RegisterView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1A6347832BA4D8B900234EFC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1A6347842BA4D99A00234EFC /* LoginViewModel.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +245,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A63478D2BA4DDFD00234EFC /* CustomTextField.swift in Sources */,
+				1A63477D2BA4D6F200234EFC /* DateFormatter.swift in Sources */,
 				1A6347622BA4D11400234EFC /* ContentView.swift in Sources */,
+				1A63478B2BA4DB3B00234EFC /* RegisterView.swift in Sources */,
+				1A6347872BA4DA8E00234EFC /* LoginMainView.swift in Sources */,
 				1A6347602BA4D11400234EFC /* MangaVaultApp.swift in Sources */,
+				1A6347762BA4D68500234EFC /* URLSession.swift in Sources */,
+				1A6347782BA4D6A200234EFC /* NetworkError.swift in Sources */,
+				1A6347892BA4DB3300234EFC /* LoginView.swift in Sources */,
+				1A6347722BA4D62B00234EFC /* URL.swift in Sources */,
+				1A6347742BA4D64900234EFC /* URLRequest.swift in Sources */,
+				1A63477A2BA4D6C400234EFC /* JSONDecoder.swift in Sources */,
+				1A6347852BA4D99A00234EFC /* LoginViewModel.swift in Sources */,
+				1A6347802BA4D7A800234EFC /* LoginInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
