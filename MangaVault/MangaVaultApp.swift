@@ -10,11 +10,16 @@ import SwiftUI
 @main
 struct MangaVaultApp: App {
     @StateObject var loginViewModel = LoginViewModel()
-    
+    @AppStorage("userLogged") private var loggedUser = false
+
     var body: some Scene {
         WindowGroup {
-            LoginMainView()
-                .environmentObject(loginViewModel)
+            if loggedUser {
+                MyCollectionView()
+            } else {
+                LoginMainView()
+                    .environmentObject(loginViewModel)
+            }
         }
     }
 }

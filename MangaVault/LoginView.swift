@@ -18,7 +18,9 @@ struct LoginView: View {
             CustomTextField(title: "Password", value: $vm.password, textfieldStyle: .secure)
             
             Button(action: {
-                
+                Task {
+                    await vm.loginUser()
+                }
             }, label: {
                 Text("Login")
             })

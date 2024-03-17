@@ -46,7 +46,27 @@ extension URLRequest {
     static func loginUserRequest(username: String, password: String) -> URLRequest {
         var request = URLRequest(url: .loginUserURL)
         
-        //request.setValue(<#T##value: String?##String?#>, forHTTPHeaderField: <#T##String#>)
+        let credentials = "\(username):\(password)"
+        
+        let auth2 = "Basic \(credentials.data(using: .utf8)!.base64EncodedString())"
+        
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("*/*", forHTTPHeaderField: "Accept")
+        request.setValue("sLGH38NhEJ0_anlIWwhsz1-LarClEohiAHQqayF0FY", forHTTPHeaderField: "App-Token")
+        request.setValue(auth2, forHTTPHeaderField: "Authorization")
+        
+        return request
+    }
+    
+    static func myCollectionRequest(token: String) -> URLRequest {
+        var request = URLRequest(url: .myCollectionURL)
+        
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("*/*", forHTTPHeaderField: "Accept")
+        request.setValue("sLGH38NhEJ0_anlIWwhsz1-LarClEohiAHQqayF0FY", forHTTPHeaderField: "App-Token")
+        request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        
         return request
     }
 }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1A6347602BA4D11400234EFC /* MangaVaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A63475F2BA4D11400234EFC /* MangaVaultApp.swift */; };
-		1A6347622BA4D11400234EFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6347612BA4D11400234EFC /* ContentView.swift */; };
 		1A6347642BA4D11700234EFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6347632BA4D11700234EFC /* Assets.xcassets */; };
 		1A6347672BA4D11700234EFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6347662BA4D11700234EFC /* Preview Assets.xcassets */; };
 		1A6347722BA4D62B00234EFC /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6347712BA4D62B00234EFC /* URL.swift */; };
@@ -23,12 +22,15 @@
 		1A6347892BA4DB3300234EFC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6347882BA4DB3300234EFC /* LoginView.swift */; };
 		1A63478B2BA4DB3B00234EFC /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A63478A2BA4DB3B00234EFC /* RegisterView.swift */; };
 		1A63478D2BA4DDFD00234EFC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A63478C2BA4DDFD00234EFC /* CustomTextField.swift */; };
+		1A6347912BA4E8C600234EFC /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6347902BA4E8C600234EFC /* KeychainManager.swift */; };
+		1A6347942BA5A86B00234EFC /* MyCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6347932BA5A86B00234EFC /* MyCollectionViewModel.swift */; };
+		1A6347962BA5A87500234EFC /* MyCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6347952BA5A87500234EFC /* MyCollectionView.swift */; };
+		1A6347982BA5AF8000234EFC /* MyCollectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6347972BA5AF8000234EFC /* MyCollectionInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A63475C2BA4D11400234EFC /* MangaVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangaVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A63475F2BA4D11400234EFC /* MangaVaultApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaVaultApp.swift; sourceTree = "<group>"; };
-		1A6347612BA4D11400234EFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1A6347632BA4D11700234EFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A6347662BA4D11700234EFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1A6347712BA4D62B00234EFC /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
@@ -43,6 +45,10 @@
 		1A6347882BA4DB3300234EFC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1A63478A2BA4DB3B00234EFC /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		1A63478C2BA4DDFD00234EFC /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		1A6347902BA4E8C600234EFC /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		1A6347932BA5A86B00234EFC /* MyCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewModel.swift; sourceTree = "<group>"; };
+		1A6347952BA5A87500234EFC /* MyCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionView.swift; sourceTree = "<group>"; };
+		1A6347972BA5AF8000234EFC /* MyCollectionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,16 +81,15 @@
 		1A63475E2BA4D11400234EFC /* MangaVault */ = {
 			isa = PBXGroup;
 			children = (
+				1A63478F2BA4E8B800234EFC /* Managers */,
+				1A63478E2BA4E3F300234EFC /* ViewComponents */,
 				1A63477E2BA4D79500234EFC /* Interactor */,
 				1A63477B2BA4D6E800234EFC /* Extension */,
 				1A6347702BA4D61500234EFC /* Network */,
 				1A63476D2BA4D4B600234EFC /* Core */,
 				1A63476F2BA4D4D600234EFC /* Resources */,
 				1A63476E2BA4D4C400234EFC /* System */,
-				1A6347612BA4D11400234EFC /* ContentView.swift */,
-				1A6347632BA4D11700234EFC /* Assets.xcassets */,
 				1A6347652BA4D11700234EFC /* Preview Content */,
-				1A63478C2BA4DDFD00234EFC /* CustomTextField.swift */,
 			);
 			path = MangaVault;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 		1A63476D2BA4D4B600234EFC /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				1A6347922BA5A85C00234EFC /* MyCollection */,
 				1A6347812BA4D8AA00234EFC /* Login */,
 			);
 			name = Core;
@@ -116,6 +122,7 @@
 		1A63476F2BA4D4D600234EFC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1A6347632BA4D11700234EFC /* Assets.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -144,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				1A63477F2BA4D7A800234EFC /* LoginInteractor.swift */,
+				1A6347972BA5AF8000234EFC /* MyCollectionInteractor.swift */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -173,6 +181,31 @@
 				1A6347842BA4D99A00234EFC /* LoginViewModel.swift */,
 			);
 			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		1A63478E2BA4E3F300234EFC /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				1A63478C2BA4DDFD00234EFC /* CustomTextField.swift */,
+			);
+			name = ViewComponents;
+			sourceTree = "<group>";
+		};
+		1A63478F2BA4E8B800234EFC /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1A6347902BA4E8C600234EFC /* KeychainManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		1A6347922BA5A85C00234EFC /* MyCollection */ = {
+			isa = PBXGroup;
+			children = (
+				1A6347932BA5A86B00234EFC /* MyCollectionViewModel.swift */,
+				1A6347952BA5A87500234EFC /* MyCollectionView.swift */,
+			);
+			name = MyCollection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,17 +280,20 @@
 			files = (
 				1A63478D2BA4DDFD00234EFC /* CustomTextField.swift in Sources */,
 				1A63477D2BA4D6F200234EFC /* DateFormatter.swift in Sources */,
-				1A6347622BA4D11400234EFC /* ContentView.swift in Sources */,
+				1A6347982BA5AF8000234EFC /* MyCollectionInteractor.swift in Sources */,
 				1A63478B2BA4DB3B00234EFC /* RegisterView.swift in Sources */,
 				1A6347872BA4DA8E00234EFC /* LoginMainView.swift in Sources */,
 				1A6347602BA4D11400234EFC /* MangaVaultApp.swift in Sources */,
 				1A6347762BA4D68500234EFC /* URLSession.swift in Sources */,
 				1A6347782BA4D6A200234EFC /* NetworkError.swift in Sources */,
+				1A6347942BA5A86B00234EFC /* MyCollectionViewModel.swift in Sources */,
 				1A6347892BA4DB3300234EFC /* LoginView.swift in Sources */,
 				1A6347722BA4D62B00234EFC /* URL.swift in Sources */,
+				1A6347912BA4E8C600234EFC /* KeychainManager.swift in Sources */,
 				1A6347742BA4D64900234EFC /* URLRequest.swift in Sources */,
 				1A63477A2BA4D6C400234EFC /* JSONDecoder.swift in Sources */,
 				1A6347852BA4D99A00234EFC /* LoginViewModel.swift in Sources */,
+				1A6347962BA5A87500234EFC /* MyCollectionView.swift in Sources */,
 				1A6347802BA4D7A800234EFC /* LoginInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
