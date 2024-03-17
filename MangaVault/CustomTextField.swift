@@ -23,9 +23,13 @@ struct CustomTextField: View {
             switch textfieldStyle {
             case .normal:
                 TextField(title, text: $value, prompt: Text(title))
+                    .textContentType(.username)
+                    .textInputAutocapitalization(.never)
                     .textFieldStyle(.roundedBorder)
             case .secure:
                 SecureField(title, text: $value, prompt: Text(title))
+                    .textFieldStyle(.roundedBorder)
+                    .textContentType(.password)
             }
         }
     }

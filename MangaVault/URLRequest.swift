@@ -69,4 +69,18 @@ extension URLRequest {
         
         return request
     }
+    
+    static func registerUserRequest(user: UserModel) -> URLRequest {
+        var request = URLRequest(url: .registerUserURL)
+        
+        
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("*/*", forHTTPHeaderField: "Accept")
+        request.setValue("sLGH38NhEJ0_anlIWwhsz1-LarClEohiAHQqayF0FY", forHTTPHeaderField: "App-Token")
+        
+        request.httpBody = try? JSONEncoder().encode(user)
+        
+        return request
+    }
 }

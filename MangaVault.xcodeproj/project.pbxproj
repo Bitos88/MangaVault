@@ -26,6 +26,9 @@
 		1A6347942BA5A86B00234EFC /* MyCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6347932BA5A86B00234EFC /* MyCollectionViewModel.swift */; };
 		1A6347962BA5A87500234EFC /* MyCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6347952BA5A87500234EFC /* MyCollectionView.swift */; };
 		1A6347982BA5AF8000234EFC /* MyCollectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6347972BA5AF8000234EFC /* MyCollectionInteractor.swift */; };
+		1A63479A2BA76CBD00234EFC /* BiometricManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6347992BA76CBD00234EFC /* BiometricManager.swift */; };
+		1A63479C2BA7750800234EFC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A63479B2BA7750800234EFC /* UserModel.swift */; };
+		1A63479F2BA7794D00234EFC /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A63479E2BA7794D00234EFC /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		1A6347932BA5A86B00234EFC /* MyCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewModel.swift; sourceTree = "<group>"; };
 		1A6347952BA5A87500234EFC /* MyCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionView.swift; sourceTree = "<group>"; };
 		1A6347972BA5AF8000234EFC /* MyCollectionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionInteractor.swift; sourceTree = "<group>"; };
+		1A6347992BA76CBD00234EFC /* BiometricManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricManager.swift; sourceTree = "<group>"; };
+		1A63479B2BA7750800234EFC /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		1A63479E2BA7794D00234EFC /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				1A63477C2BA4D6F200234EFC /* DateFormatter.swift */,
+				1A63479E2BA7794D00234EFC /* String.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -161,6 +168,7 @@
 			children = (
 				1A6347822BA4D8B200234EFC /* View */,
 				1A6347832BA4D8B900234EFC /* ViewModel */,
+				1A63479D2BA7751400234EFC /* Model */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -195,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				1A6347902BA4E8C600234EFC /* KeychainManager.swift */,
+				1A6347992BA76CBD00234EFC /* BiometricManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -206,6 +215,14 @@
 				1A6347952BA5A87500234EFC /* MyCollectionView.swift */,
 			);
 			name = MyCollection;
+			sourceTree = "<group>";
+		};
+		1A63479D2BA7751400234EFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A63479B2BA7750800234EFC /* UserModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,18 +297,21 @@
 			files = (
 				1A63478D2BA4DDFD00234EFC /* CustomTextField.swift in Sources */,
 				1A63477D2BA4D6F200234EFC /* DateFormatter.swift in Sources */,
+				1A63479F2BA7794D00234EFC /* String.swift in Sources */,
 				1A6347982BA5AF8000234EFC /* MyCollectionInteractor.swift in Sources */,
 				1A63478B2BA4DB3B00234EFC /* RegisterView.swift in Sources */,
 				1A6347872BA4DA8E00234EFC /* LoginMainView.swift in Sources */,
 				1A6347602BA4D11400234EFC /* MangaVaultApp.swift in Sources */,
 				1A6347762BA4D68500234EFC /* URLSession.swift in Sources */,
 				1A6347782BA4D6A200234EFC /* NetworkError.swift in Sources */,
+				1A63479A2BA76CBD00234EFC /* BiometricManager.swift in Sources */,
 				1A6347942BA5A86B00234EFC /* MyCollectionViewModel.swift in Sources */,
 				1A6347892BA4DB3300234EFC /* LoginView.swift in Sources */,
 				1A6347722BA4D62B00234EFC /* URL.swift in Sources */,
 				1A6347912BA4E8C600234EFC /* KeychainManager.swift in Sources */,
 				1A6347742BA4D64900234EFC /* URLRequest.swift in Sources */,
 				1A63477A2BA4D6C400234EFC /* JSONDecoder.swift in Sources */,
+				1A63479C2BA7750800234EFC /* UserModel.swift in Sources */,
 				1A6347852BA4D99A00234EFC /* LoginViewModel.swift in Sources */,
 				1A6347962BA5A87500234EFC /* MyCollectionView.swift in Sources */,
 				1A6347802BA4D7A800234EFC /* LoginInteractor.swift in Sources */,
@@ -431,6 +451,7 @@
 				DEVELOPMENT_TEAM = 5X587S7WGV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please allows us to use face id for authentication";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -460,6 +481,7 @@
 				DEVELOPMENT_TEAM = 5X587S7WGV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please allows us to use face id for authentication";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

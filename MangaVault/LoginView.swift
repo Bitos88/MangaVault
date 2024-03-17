@@ -14,7 +14,7 @@ struct LoginView: View {
         VStack {
             Text("Manga Vault")
                 .font(.title)
-            CustomTextField(title: "Username", value: $vm.username)
+            CustomTextField(title: "Email", value: $vm.email)
             CustomTextField(title: "Password", value: $vm.password, textfieldStyle: .secure)
             
             Button(action: {
@@ -41,6 +41,9 @@ struct LoginView: View {
                 })
             }
         }
+        .alert(vm.loginError, isPresented: $vm.showLoginError, actions: {}, message: {
+            Text("Compruebe sus datos")
+        })
         .padding()
     }
 }

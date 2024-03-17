@@ -20,5 +20,6 @@ extension URL {
     static let byAuthorURL = api.appending(path: "mangaByAuthor")
     static let mangaContainsURL = searchAPI.appending(path: "mangasContains")
     static let loginUserURL = loginAPI.appending(path: "login")
+    static let registerUserURL = loginAPI
     static let myCollectionURL = collectionAPI
 }

@@ -15,11 +15,13 @@ struct RegisterView: View {
             Text("Register new user")
                 .font(.title)
                 .padding()
-            CustomTextField(title: "Username", value: $vm.username)
+            CustomTextField(title: "Email", value: $vm.email)
             CustomTextField(title: "Password", value: $vm.password, textfieldStyle: .secure)
+            CustomTextField(title: "Repeat Password", value: $vm.repeatPassword, textfieldStyle: .secure)
+            
             
             Button(action: {
-                
+                Task { await vm.registerUser() }
             }, label: {
                 Text("Confirm")
             })
